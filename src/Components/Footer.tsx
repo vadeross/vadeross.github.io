@@ -1,6 +1,13 @@
 "use client";
-import { useCallback } from "react";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
-  return <footer>wo</footer>;
+    const [year, setYear] = useState<number>()
+
+    useEffect(() => {
+        const newDate = new Date()
+        setYear(newDate.getFullYear())
+    }, [])
+
+    return <footer>© {year} Vadeross</footer>
 }
