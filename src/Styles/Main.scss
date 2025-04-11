@@ -1,0 +1,48 @@
+$base: #1e1e2e;
+$crust: #11111b;
+$text: #cba6f7;
+
+body {
+  background-color: $crust;
+  color: $text;
+  font-family: "Ubuntu"
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 14vh;
+
+  .ProfilePic{
+    height: 110px;
+    border-radius: 100px;
+    margin: 10px 0 0 40px;
+  }
+
+  a {
+    margin: 10px 0 0 10px;
+
+    svg {
+      border: solid black 2px;
+      border-radius: 100px;
+      height: 50px;
+    }
+  }
+}
+
+hr {
+  color: $text;
+  width: 95%;
+}
+
+.gh{
+  text-align: center;
+  margin: 15px;
+  font-size: 40px;
+  min-height: 80vh;
+}
+
+footer {
+  background-color: $base;
+  width: 100%;
+}
