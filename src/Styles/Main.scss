@@ -16,6 +16,7 @@ body {
 header {
   display: flex;
   justify-content: flex-start;
+  max-height: 15vh;
 
   .ProfilePic{
     height: 90px;
@@ -55,4 +56,29 @@ footer {
   background-color: $base;
   width: 100%;
   font-size: 20px;
+}
+
+.languages-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .brackets {
+    margin: 15px 0 0 40vh;
+    font-size: 25px;
+  }
+  .languages {
+    .language{
+      margin-left: 5vh;
+      height: 40px;
+      p {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        margin-left: 2vh;
+      }
+      .icon {
+        margin-right: 7px; margin-bottom: 5px;
+      }
+    }
+  }
 }
