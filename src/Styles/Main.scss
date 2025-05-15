@@ -33,7 +33,7 @@ header {
   }
 
   svg {
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 8px;
     border-radius: 100px;
     height: 40px;
   }
@@ -42,13 +42,18 @@ header {
 hr {
   color: $text;
   width: 95%;
+  margin-top: 4vh;
 }
 
-.gh{
+.projects-section{
   text-align: center;
-  margin: 15px;
   font-size: 40px;
   min-height: 81.4vh;
+  project.icon {
+    svg {
+      height: 4px;
+    }
+  }
 }
 
 footer {
@@ -62,11 +67,15 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: 34vh;
+  max-height: 20vh; max-width: 160vh;
   .brackets {
-    margin: 15px 0 0 40vh;
+    margin: 33px 0 0 40vh;
     font-size: 25px;
   }
   .languages {
+    display: flex;
+    flex-wrap: wrap;
     .language{
       margin-left: 5vh;
       height: 40px;
