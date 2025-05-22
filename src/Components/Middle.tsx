@@ -6,10 +6,36 @@ export default function Middle() {
   return(
 	<section className='projects-section'>
 		<div>
-			<p className='project-icon'>
+			<p className='projects-icon'>
 				<span dangerouslySetInnerHTML={{__html: pr}}></span>
 				Projects
 			</p>
+		</div>
+		<div  className='project-container'>
+			<section className='projects-left'>
+				<div className='project'>
+					<div>
+						<p className='title'>
+							<span className='project-icon'>
+								<span dangerouslySetInnerHTML={{__html: pr}}></span>
+							</span>
+							<span className='name'>
+								<span className='user'>vadeross</span>
+								<span className='sep'>/</span>
+								<span className='repo-name'>vadeross.github.io</span>
+							</span>
+						</p>
+						<p className='description'>My website</p>
+					</div>
+				</div>
+			</section>
+			<section className='projects-right'>
+				<div className='project'>
+					<div>
+						<p className='title'>right</p>
+					</div>
+				</div>
+			</section>
 		</div>
 	</section>
 )}

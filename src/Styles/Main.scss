@@ -1,6 +1,7 @@
 $base: #1e1e2e;
 $crust: #11111b;
 $text: #cba6f7;
+$border: rgba(203, 166, 247, .7);
 
 * {
   max-width: 100%;
@@ -10,7 +11,7 @@ $text: #cba6f7;
 body {
   background-color: $crust;
   color: $text;
-  font-family: "Ubuntu"
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
@@ -49,9 +50,45 @@ hr {
   text-align: center;
   font-size: 40px;
   min-height: 81.4vh;
-  project.icon {
+  .projects-icon {
     svg {
-      height: 4px;
+      height: 3.5vh;
+    }
+  }
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  .projects-left {
+    margin: 7vh 0 0 40vh;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .projects-right {
+    margin: 7vh 40vh 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.project {
+  min-width: 400px;
+  border-radius: 28px;
+  border: 2px solid $border;
+  background-color: $base;
+  font-size: .60em;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+  justify-content: space-between;
+  transition: .2s;
+  animation: .5s repo-in;
+  text-align: left;
+  .project-icon {
+    svg {
+      height: 2.2vh;
     }
   }
 }
