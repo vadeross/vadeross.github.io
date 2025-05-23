@@ -19,11 +19,13 @@ export default function Middle() {
 							<span className='project-icon'>
 								<span dangerouslySetInnerHTML={{__html: pr}}></span>
 							</span>
+							<a href='https://github.com/vadeross/vadeross.github.io'>
 							<span className='name'>
 								<span className='user'>vadeross</span>
 								<span className='sep'>/</span>
 								<span className='repo-name'>vadeross.github.io</span>
 							</span>
+							</a>
 						</p>
 						<p className='description'>My website</p>
 					</div>
@@ -32,7 +34,19 @@ export default function Middle() {
 			<section className='projects-right'>
 				<div className='project'>
 					<div>
-						<p className='title'>right</p>
+						<p className='title'>
+							<span className='project-icon'>
+								<span dangerouslySetInnerHTML={{__html: pr}}></span>
+							</span>
+							<a href='https://github.com/vadeross/dotfiles'>
+							<span className='name'>
+								<span className='user'>vadeross</span>
+								<span className='sep'>/</span>
+								<span className='repo-name'>dotfiles</span>
+							</span>
+							</a>
+						</p>
+						<p className='description'>My dotfiles</p>
 					</div>
 				</div>
 			</section>
